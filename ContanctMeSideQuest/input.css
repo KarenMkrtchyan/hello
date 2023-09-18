@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100&display=swap');
+
+:root{
+    --background-color: #121212;
+    --error-color: #cf6679;
+    --primary-color: #bb86fc;
+    --text-color: #ffffff;
+    --secondary-color: #03dac6;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family:'Roboto', sans-serif;
+    font-size: 5vw;
+    width: 95dvw;
+    height: 100dvh;
+}
+ul{
+    list-style: none;
+}
+button{
+    font-family: inherit;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.7rem;
+    margin-top:0;
+    text-align: center;
+    line-height: 1.2;
+}
+label{
+    font-size: 1.5rem;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap:25px;
+    border: none;
+    width: 100%;
+}
+fieldset{
+    border:none;
+}
+li{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    height: 80dvh;
+    width: inherit;
+   
+}
+
+.formContent{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+}
+
+input[type="text"],
+input[type="email"]
+{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 5px 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea
+{
+    transition: all .5s;
+    opacity: .8;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus
+{
+   
+    opacity: 1;
+}
+
+
+textarea{
+    width: 100%;
+    height: 25vh;
+    background: none;
+    border: 2px solid var(--text-color);
+    border-radius: 1rem;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+button{
+    font-size: 3rem;
+    padding: 5px 30px;
+    width: 50vw;
+    color: var(--primary-color);
+    background: none;
+    border: solid 4px var(--primary-color);
+    border-radius: 2em;
+    transition: all .7s;
+}
+
+input:valid{
+    background-color: var(--secondary-color);
+    color: var(--text-color);  
+}
+
+input:invalid{
+    background-color: var(--error-color);
+    color: var(--text-color);
+}
+
+input:hover{
+    width: 55%;
+}
+
+button:hover{
+    width: 60vw;
+}
+button:focus{
+    width:50;
+}

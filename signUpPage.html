@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUpPage.css">
+    <script src="./singUpPage.js" defer></script>
+    <title>Sign Up!</title>
+</head>
+<body>
+    <div class="image">
+        <h1 class="logo">ODIN</h1>
+    </div>
+    <div class="content">
+        <div class="marketingInfo">
+          <h2>This might not be real, but the love I have for you is. Now open up that wallets and lets get to buisness</h2>
+          <h2>You <i>know</i> you want to</h2>
+        </div>
+        <div class="singUpDiv">
+            <form action="" method="" id="form1">
+              <fieldset>
+                  <ul class="signUpContainer">
+                      <h1>Lets do this!</h1>
+                      <li class="formElement">
+                          <label for="firstName">first name *</label>
+                          <input id="firstName" type="text" placeholder="Skharabadyak" required minlength="2" maxlength="10">
+                      </li>
+                      
+                    <li class="formElement">
+                        <label for="lastName">last name *</label>
+                        <input id="lastName" type="text" placeholder="Skharabagadka" required>
+                    </li>
+                      
+                      <li class="formElement">
+                          <label for="email">email *</label>
+                          <input id="email" type="email" placeholder="uselesslyLongEmail@adress.com" required>
+                      </li>
+                      <li class="formElement">
+                          <label for="phone">phone number</label>
+                          <input id="phone" type="tel" placeholder="5553332224242">
+                      </li>
+                      <li class="formElement">
+                          <label for="password">password *</label>
+                          <input id="password" type="password" placeholder="1235" required>
+                      </li class="formElement">
+                      <li class="formElement">
+                          <label for="passwordConfirm">confirm passowrd *</label>
+                          <input id="passwordConfirm" type="password" placeholder="1235" required>
+                      </li>
+                  </ul>
+              </fieldset>
+            </form>
+        </div>
+        <div class="logIn">
+            <button  form="form1" type="submit" class="createAccount">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>  
+    </div>
+</body>
+</html>
